@@ -1,7 +1,7 @@
 Summary:	A media playback framework based on Qt and FFmpeg
 Name:		qtav
 Version:	1.12.0
-Release:	3
+Release:	4
 License:	LGPLv2+ and GPLv3+ and BSD
 Group:		Development/Libraries
 URL:		http://www.qtav.org/
@@ -99,7 +99,7 @@ Group:		Applications/Multimedia
 License:	GPL v3
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-widgets = %{version}-%{release}
-Requires:	qtav-qml-module = %{version}-%{release}
+Requires:	%{name}-qml-module = %{version}-%{release}
 
 %description players
 QtAV is a multimedia playback framework based on Qt and FFmpeg. High
@@ -193,6 +193,7 @@ fi
 %files qml-module
 %defattr(644,root,root,755)
 %doc README.md Changelog
+%dir %{_libdir}/qt5/qml/QtAV
 %{_libdir}/qt5/qml/QtAV/Video.qml
 %{_libdir}/qt5/qml/QtAV/libQmlAV.so
 %{_libdir}/qt5/qml/QtAV/plugins.qmltypes
