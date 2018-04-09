@@ -1,7 +1,7 @@
 Summary:	A media playback framework based on Qt and FFmpeg
 Name:		qtav
 Version:	1.12.0
-Release:	2
+Release:	3
 License:	LGPLv2+ and GPLv3+ and BSD
 Group:		Development/Libraries
 URL:		http://www.qtav.org/
@@ -48,11 +48,12 @@ Features include:
   - QML support as a plugin. Most playback APIs are compatible with
     QtMultiMedia module.
 
-%package -n lib%{name}
+%package -n libqtav
 Summary:	QtAV library
+Group:		Libraries
 Requires:	ffmpeg
 
-%description -n lib%{name}
+%description -n libqtav
 QtAV is a multimedia playback library based on Qt and FFmpeg. It can
 help you to write a player with less effort than ever before.
 
@@ -60,6 +61,7 @@ This package contains the QtAV library.
 
 %package widgets
 Summary:	QtAV Widgets module
+Group:		Applications/Multimedia
 Requires:	%{name} = %{version}-%{release}
 
 %description widgets
@@ -70,6 +72,7 @@ This package contains a set of widgets to play media.
 
 %package devel
 Summary:	QtAV development files
+Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	%{name}-widgets = %{version}-%{release}
 
@@ -82,6 +85,7 @@ QtAV applications using QtAV headers.
 
 %package qml-module
 Summary:	QtAV QML module
+Group:		Development/Libraries
 
 %description qml-module
 QtAV is a multimedia playback library based on Qt and FFmpeg. It can
@@ -91,6 +95,7 @@ This package contains the QtAV QML module for Qt declarative.
 
 %package players
 Summary:	QtAV/QML players
+Group:		Applications/Multimedia
 License:	GPL v3
 Requires:	libqtav = %{version}-%{release}
 Requires:	libqtavwidgets = %{version}-%{release}
