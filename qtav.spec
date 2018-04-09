@@ -97,8 +97,8 @@ This package contains the QtAV QML module for Qt declarative.
 Summary:	QtAV/QML players
 Group:		Applications/Multimedia
 License:	GPL v3
-Requires:	libqtav = %{version}-%{release}
-Requires:	libqtavwidgets = %{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}-widgets = %{version}-%{release}
 Requires:	qtav-qml-module = %{version}-%{release}
 
 %description players
