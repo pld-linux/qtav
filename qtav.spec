@@ -1,7 +1,7 @@
 Summary:	A media playback framework based on Qt and FFmpeg
 Name:		qtav
 Version:	1.12.0
-Release:	1
+Release:	2
 License:	LGPLv2+ and GPLv3+ and BSD
 Group:		Development/Libraries
 URL:		http://www.qtav.org/
