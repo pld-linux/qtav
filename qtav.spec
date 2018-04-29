@@ -1,12 +1,13 @@
 Summary:	A media playback framework based on Qt and FFmpeg
 Name:		qtav
 Version:	1.12.0
-Release:	4
+Release:	5
 License:	LGPLv2+ and GPLv3+ and BSD
 Group:		Development/Libraries
 URL:		http://www.qtav.org/
 Source0:	https://github.com/wang-bin/QtAV/archive/v%{version}.tar.gz
 # Source0-md5:	9a28d4e5061569f709be6eb649e51499
+Patch0:		%{name}-ffmpeg.patch
 BuildRequires:	OpenAL-devel
 BuildRequires:	Qt5Core-devel
 BuildRequires:	Qt5Declarative-devel
@@ -109,6 +110,7 @@ This package contains the QtAV based players.
 
 %prep
 %setup -q -n QtAV-%{version}
+%patch0 -p0
 
 %build
 install -d build
