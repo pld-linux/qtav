@@ -1,7 +1,7 @@
 Summary:	A media playback framework based on Qt and FFmpeg
 Name:		qtav
 Version:	1.12.0
-Release:	5
+Release:	6
 License:	LGPLv2+ and GPLv3+ and BSD
 Group:		Development/Libraries
 URL:		http://www.qtav.org/
@@ -11,6 +11,7 @@ Patch0:		%{name}-ffmpeg.patch
 BuildRequires:	OpenAL-devel
 BuildRequires:	Qt5Core-devel
 BuildRequires:	Qt5Declarative-devel
+BuildRequires:	Qt5OpenGL-devel
 BuildRequires:	Qt5Quick-devel
 BuildRequires:	Qt5Svg-devel
 BuildRequires:	desktop-file-utils
@@ -19,6 +20,7 @@ BuildRequires:	ffmpeg-devel
 BuildRequires:	libass-devel
 BuildRequires:	libva-devel
 BuildRequires:	pulseaudio-devel
+BuildRequires:	qt5-build
 BuildRequires:	uchardet-devel
 BuildRequires:	xorg-lib-libXv-devel
 Requires:	hicolor-icon-theme
