@@ -112,7 +112,7 @@ This package contains the QtAV based players.
 
 %prep
 %setup -q -n QtAV-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 install -d build
